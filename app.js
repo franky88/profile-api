@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const usersRoutes = require('./routes/users');
+// const itemsRoutes = require('./routes/items');
 require('dotenv').config();
 
 const app = express();
@@ -23,6 +24,7 @@ app.use((req, res, next) => {
 //middle ware
 app.use(express.json());
 app.use('/api/users', usersRoutes);
+// app.use('/api/items', itemsRoutes);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)

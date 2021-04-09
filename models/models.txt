@@ -1,0 +1,10 @@
+Users
+    - name, email, password, isActive, isAdmin, usertype, timestamp
+Students
+    - lrn, firstname, lastname, birthdate, status, timestamp, contact_number, email
+Attendance
+    - date, time_schedule, present, absent, late, excuse, holiday
+Subject
+    - name, units, hours, timestamp
+Room
+    - name, timestamp
