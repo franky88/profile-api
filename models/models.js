@@ -50,7 +50,7 @@ const usersSchema = mongoose.Schema({
         type: Boolean,
         default: true
     },
-    items: [itemSchema],
+    // items: [itemSchema],
 })
 
 module.exports = mongoose.model('authUsers', usersSchema);
