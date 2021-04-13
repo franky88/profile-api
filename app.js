@@ -24,7 +24,6 @@ app.use((req, res, next) => {
 //middle ware
 app.use(express.json());
 app.use('/api/users', usersRoutes);
-// app.use('/api/items', itemsRoutes);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)
